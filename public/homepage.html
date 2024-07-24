@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <title>home page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+   
+
+    <!-- <link  defer rel="stylesheet" href="homepage.css"> -->
+
+    <style>
+        #getstarted:hover
+{
+background-color: rgb(222, 170, 15);
+
+}
+.textStack h1{
+    font-size: 60px;
+}
+.textStack p{
+    font-size: 30px;
+}
+
+/* body_getstarted_button */
+#body_getstarted_button:hover
+{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(222, 170, 15);
+}
+.sectionBuilder {
+    min-height: 100vh; /* Set minimum height to 100% of the viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* to fix the navigation bar sticky */
+  #navigation-bar
+  {
+    position:fixed;
+    top: 0;
+  width: 100%
+  }
+
+  /* footer */
+  .footer li{
+    display: inline-block;
+   
+    /* justify-content: center; */
+  }
+
+  #logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+  #logo a {
+    color: white; /* Assuming you want the social media icons to be white */
+    padding-right: 20px;
+    font-size: 20px;
+}
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-white" id="navigation-bar">
+        <div class="container">
+            <a class="navbar-brand" href="#" style="color: rgb(219, 80, 62)">ToDo List</a>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Solutions</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 >
+            <li class=" nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="#" id="login" data-bs-target="#exampleModal" data-bs-toggle="modal" >Login</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <!-- <button class="btn btn-dark " data-bs-toggle="modal" data-bs-target="#exampleModal"  id="getstarted"> Get Started</button> -->
+                        <a href="index.html" class="btn btn-dark " id="getstarted">Get Started</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- model for signup -->
+   
+    <div id="modeContainer">
+
+    </div>
+
+
+
+
+
+
+
+    <!--body part  -->
+    <section class="sectionBuilder bg-body-tertiary">
+        <div class="container ">
+            <div class="textStack text-center">
+                <h1 class="heading -h2">A better online to-do list app for <br> work</h1>
+                <p class="mt-5">chanikya's ToDo List makes it easier for a team to plan their work by <br> using online to-do lists.
+                </p>
+
+                <!-- <button class="btn btn-dark " data-bs-toggle="modal" data-bs-target="#exampleModal"  id="getstarted"> Get Started</button> -->
+                <a href="index.html" class="btn btn-dark " id="getstarted">Get Started</a>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+    <!-- second body part -->
+    <section class=" bg-white">
+        <div class="container">
+            <div class="row cols-2 mt-5">
+                <div class="col">
+                    <div class="m-auto">
+                        <p style="font-size: 30px;">A simple to-do list <br> maker that meets your <br>team’s needs</p>
+
+                        <p>Create a <b>to-do list</b> as simple or detailed as you need. Everything in Asana starts with a task, which is an actionable to-do that can stand alone or be a building block for bigger projects. Connect the tasks on your to-do lists back to larger projects, loop in teammates, and share real-time updates online</p>
+                    </div>
+                    <div class="mt-5">  <button class="btn btn-dark">Learn More About ToDO List</button></div>
+                </div>
+                <div class="col">
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+<footer>
+    <nav class="navbar bg-dark mt-5">
+        <div class="container text-white ">
+            <p>@ 2024 Todo list.com</p>
+            <a href="" class="nav-link"><i class="bi bi-globe me-3"></i>English</a>
+            <a href="" class="nav-link">Terms and Conditions</a>
+            <div class="text-white" id="logo">
+                <a href="" ><i class="bi bi-twitter-x"></i></a>
+                <a href="" ><i class="bi bi-instagram"></i></a>
+                <a href="" ><i class="bi bi-facebook"></i></a>
+                <a href="" ><i class="bi bi-envelope"></i></a>
+            </div>
+        </div>
+    
+    </nav>
+
+</footer>
+
+<!-- homepage javascript file -->
+<script src="homepage.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

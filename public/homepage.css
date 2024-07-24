@@ -1,0 +1,55 @@
+body{
+  background-color: aquamarine !important;
+}
+#getstarted:hover
+{
+background-color: rgb(222, 170, 15);
+
+}
+.textStack h1{
+    font-size: 60px;
+}
+.textStack p{
+    font-size: 30px;
+}
+
+/* body_getstarted_button */
+#body_getstarted_button:hover
+{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(222, 170, 15);
+}
+.sectionBuilder {
+    min-height: 100vh; /* Set minimum height to 100% of the viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* to fix the navigation bar sticky */
+  #navigation-bar
+  {
+    position:fixed;
+    top: 0;
+  width: 100%
+  }
+
+  /* footer */
+  .footer li{
+    display: inline-block;
+   
+    /* justify-content: center; */
+  }
+
+  #logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+  #logo a {
+    color: white; /* Assuming you want the social media icons to be white */
+    padding-right: 20px;
+    font-size: 20px;
+}
