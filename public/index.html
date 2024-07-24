@@ -68,7 +68,7 @@
                 method: "POST",
                 body: JSON.stringify(msg),
               };
-              let response = await fetch("http://localhost:8000", metaObject);
+              let response = await fetch("https://todo-list-yizy.onrender.com", metaObject);
               let result = await response.json();
               text.value = "";
               print(result);
@@ -82,7 +82,7 @@
                 method: "PUT",
                 body: JSON.stringify({ ...action, text: text.value }),
               };
-              let response = await fetch("http://localhost:8000", option);
+              let response = await fetch("https://todo-list-yizy.onrender.com", option);
               let data = await response.json();
               print(data);
               submit.innerText = "ADD";
@@ -161,7 +161,7 @@
           method: "DELETE",
           body: JSON.stringify(id),
         };
-        let response = await fetch("http://localhost:8000", object);
+        let response = await fetch("https://todo-list-yizy.onrender.com", object);
         let result = await response.json();
         if (result) {
           print(result);
