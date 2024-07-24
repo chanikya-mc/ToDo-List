@@ -133,5 +133,5 @@ let server = http.createServer((req, res) => {
 
 
 server.listen(8000, () => {
-    console.log('server is up at 8000')
+    console.log('server is up at http://localhost:8000/')
 })
